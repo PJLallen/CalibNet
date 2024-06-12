@@ -10,7 +10,7 @@ This work has been accepted by TIP 2024.
 If this helps you, please cite this work:
 
 ```
-@inproceedings{pei2024calibnet,
+@article{pei2024calibnet,
   title={CalibNet: Dual-branch Cross-modal Calibration for RGB-D Salient Instance Segmentation},
   author={Pei, Jialun and Jiang, Tao and Tang, He and Liu, Nian and Jin, Yueming and Fan, Deng-Ping and Heng, Pheng-Ann},
   booktitle={IEEE Transactions on Image Processing},
