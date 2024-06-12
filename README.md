@@ -35,28 +35,32 @@ We give an example to setup the environment. The commands are verified on CUDA 1
 # create virtual environment
 conda create -n calibnet python=3.8 -y
 conda activate calibnet
+
 # install pytorch
 pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+
 # install detectron2, use the pre-built detectron2
 python -m pip install detectron2 -f \
   https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.9/index.html
+
 # install requierement packages
 pip install -r requirements.txt
+
 # build CUDA kernel for MSDeformAttn
 cd calibnet/trans_encoder/ops
 sh make.sh
+
 # replace the model loading code in detectron2. You should specify your own detectron2 path.
 cp -i calibnet/c2_model_loading.py detectron2/checkpoint/c2_model_loading.py
-
 ```                                      
 
 ## Dataset preparation
 
-### Download the datasets and annotation files
+### Download and unzip the datasets and annotation files
 
-- **COME15K**: [Google Drive](https://drive.google.com/drive/folders/1YLgP3mQIEp0MB8rk4YYUDpISkDgnMIaM?usp=drive_link)
-- **DSIS**: [Google Drive](https://drive.google.com/drive/folders/1GRkoSaF40WAFxM8dEE1zlVGgK7E9e7Kg?usp=drive_link)
-- **SIP**: [Google Drive](https://drive.google.com/drive/folders/1-0gRLkBp_8bim5KrtZ86q1QNGmZCCxYw?usp=drive_link)
+- **COME15K**: [Google Drive](https://drive.google.com/file/d/15UdZBdtmwxq7PiCHUpkMgnUxbLF1p_O5/view?usp=drive_link)
+- **DSIS**: [Google Drive](https://drive.google.com/file/d/1zqWo6vSB4ARJqu49PqoyKatj9xxolsPp/view?usp=drive_link)
+- **SIP**: [Google Drive](https://drive.google.com/file/d/1ebNjyrS28vEXDGawxHxVFNNxz3XLBqrT/view?usp=drive_link)
 
 ### Register datasets
 
@@ -82,12 +86,12 @@ cp -i calibnet/c2_model_loading.py detectron2/checkpoint/c2_model_loading.py
     ├── DSIS
        ├── RGB
        ├── depth
-       ├── dsis.json
+       ├── DSIS.json
        ├── ...
     ├── SIP
        ├── RGB
        ├── depth
-       ├── sip.json
+       ├── SIP.json
        ├── ...
 ```
 
