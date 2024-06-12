@@ -1,5 +1,5 @@
 # CalibNet (TIP 2024)
-![CalibNet](assets/pipeline.png)
+![CalibNet: Dual-branch Cross-modal Calibration for RGB-D Salient Instance Segmentation](assets/pipeline.png)
 
 Official Implementation of "[CalibNet: Dual-branch Cross-modal Calibration for RGB-D Salient Instance Segmentation](https://arxiv.org/pdf/2307.08098)"
 
