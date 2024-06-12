@@ -1,0 +1,52 @@
+MODEL:
+  META_ARCHITECTURE: "CalibNet"
+  WEIGHTS: "detectron2://ImageNetPretrained/torchvision/R-50.pkl"
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+  BACKBONE:
+    FREEZE_AT: 0
+    NAME: "build_resnet_backbone"
+  RESNETS:
+    NORM: "FrozenBN"
+    DEPTH: 50
+    STRIDE_IN_1X1: False
+    OUT_FEATURES: ["res2", "res3", "res4", "res5"]
+  CALIBNET:
+    DATASET_MAPPER: "RGBDSISDatasetMapper"
+    ENCODER:
+      NAME: "TransformerEncoder"
+      NUM_LAYERS: 3
+    ENCODER_DEPTH:
+      NAME: "TransformerEncoder"
+      NUM_LAYERS: 3
+    DECODER:
+      NAME: "CalibNetDecoder"
+      NUM_KERNELS: 50
+    FUSION_DECODER:
+      NAME: "TwoScaleCalibNetFusionDecoder"
+DATASETS:
+  TRAIN: ("come15k_train",)
+  TEST: ("come15k_test_e", "come15k_test_h", "dsis_test", "sip_test",)
+SOLVER:
+  IMS_PER_BATCH: 4
+  BASE_LR: 0.000025
+  STEPS: (70000, 90000)
+  MAX_ITER: 100000
+  WEIGHT_DECAY: 0.0001
+  CHECKPOINT_PERIOD: 20000
+INPUT:
+  CROP:
+    ENABLED: True
+    TYPE: "absolute_range"
+    SIZE: (384, 600)
+  MASK_FORMAT: "polygon"
+  MIN_SIZE_TRAIN: (320,)
+  MAX_SIZE_TRAIN: 480
+  MIN_SIZE_TEST: 320
+  MAX_SIZE_TEST: 480
+  FORMAT: "RGB"
+TEST:
+  EVAL_PERIOD: 20000
+DATALOADER:
+  NUM_WORKERS: 6
+VERSION: 2

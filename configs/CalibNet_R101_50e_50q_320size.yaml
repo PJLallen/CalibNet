@@ -1,0 +1,9 @@
+_BASE_: "Base-CalibNet.yaml"
+MODEL:
+  RESNETS:
+    DEPTH: 101
+  CALIBNET:
+    DECODER:
+      NUM_KERNELS: 50
+TEST:
+  DETECTIONS_PER_IMAGE: 50

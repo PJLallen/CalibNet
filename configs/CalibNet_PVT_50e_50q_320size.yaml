@@ -1,0 +1,10 @@
+_BASE_: "Base-CalibNet.yaml"
+MODEL:
+  WEIGHTS: "" # download the pretrained weights
+  BACKBONE:
+    NAME: "build_pyramid_vision_transformer"
+  CALIBNET:
+    DECODER:
+      NUM_KERNELS: 50
+TEST:
+  DETECTIONS_PER_IMAGE: 50
