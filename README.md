@@ -107,7 +107,7 @@ Model weights: [Google Drive](https://drive.google.com/drive/folders/19n_Sb6Y4C9
 
 | Model     | Config                                                    | COME15K-E-test AP  | COME15K-H-test AP  | 
 | :-------- | :---------------------------------------------------------| :----------------- | :----------------- | 
-| ResNet-50       | [config](configs/CalibNet_R50_50e_50q_320size.yaml)       | 58.0               | 50.7               | 
+| ResNet-50       | [config](configs/CalibNet_R50_50e_50q_320size.yaml)       | **58.0**               | **50.7**               | 
 | ResNet-101      | [config](configs/CalibNet_R101_50e_50q_320size.yaml)      | 58.5               | 51.5               | 
 | Swin-T    | [config](configs/CalibNet_SwinT_50e_50q_320size.yaml)     | 60.0               | 52.6               | 
 | PVT-v2    | [config](configs/CalibNet_PVT_50e_50q_320size.yaml)       | 60.7               | 53.7               | 
