@@ -26,7 +26,7 @@ cd calibnet/trans_encoder/ops
 sh make.sh
 ```
 
-### Example Conda Environment Setup
+### Conda Environment Setup
 Our project is built upon [detectron2](https://github.com/facebookresearch/detectron2). In order to accommodate the RGB-D SIS task, we have made some modifacations to the framework to handle its dual modality inputs. You could replace the `c2_model_loading.py` in the framework with the one we provide `calibnet/c2_model_loading.py`.
 
 We give an example to setup the environment. The commands are verified on CUDA 11.1, pytorch 1.9.1 and detectron2 0.6.0.
@@ -133,7 +133,7 @@ python tools/train_net.py --config-file <CONFIG> --num-gpus 1 --eval-only MODEL.
 python tools/train_net.py --config-file configs/CalibNet_R50_50e_50q_320size.yaml --num-gpus 1 --eval-only MODEL.WEIGHTS weights/calibnet_r50_50e.pth OUTPUT_DIR output/eval
 ```
 
-### Get Model Statistics
+### Model Statistics
 
 We provide tools to validate the efficiency of CalibNet, including Parameters, GFLOPS and inference fps. The usages are as follow.
 
