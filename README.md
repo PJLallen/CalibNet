@@ -5,7 +5,7 @@ Official Implementation of "[CalibNet: Dual-branch Cross-modal Calibration for R
 
 [Jialun Pei](https://scholar.google.com/citations?user=1lPivLsAAAAJ&hl=en), [Tao Jiang](https://github.com/Jtao0818), [He Tang](https://scholar.google.com/citations?hl=en&user=70XLFUsAAAAJ), [Nian Liu](https://scholar.google.com/citations?user=ZSilWs4AAAAJ&hl=zh-CN), [Yueming Jin](https://yuemingjin.github.io/), [Deng-Ping Fan](https://dengpingfan.github.io/), and [Pheng-Ann Heng](https://scholar.google.com/citations?user=OFdytjoAAAAJ&hl=zh-CN)
 
-[[Paper]](https://arxiv.org/abs/2207.02255); [[Chinese Version]](); [Official Version]
+[[Paper]](https://arxiv.org/abs/2207.02255); [[Chinese Version]](https://github.com/PJLallen/CalibNet/blob/main/assets/CalibNet_Chinese.pdf); [Official Version]
 
 **Contact:** dengpfan@gmail.com, peijialun@gmail.com
 
