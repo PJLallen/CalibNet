@@ -59,7 +59,7 @@ cp -i calibnet/c2_model_loading.py detectron2/checkpoint/c2_model_loading.py
 ### Download and Unzip Datasets and Annotation Files
 
 - **COME15K**: [Google Drive](https://drive.google.com/file/d/15UdZBdtmwxq7PiCHUpkMgnUxbLF1p_O5/view?usp=drive_link)
-- **DSIS (Ours)**: [Google Drive](https://drive.google.com/file/d/1zqWo6vSB4ARJqu49PqoyKatj9xxolsPp/view?usp=drive_link)
+- **DSIS (Ours)**: [Google Drive](https://drive.google.com/file/d/1zqWo6vSB4ARJqu49PqoyKatj9xxolsPp/view?usp=drive_link); [Xunlei Drive](https://pan.xunlei.com/s/VO-ZHW99Jup3U6-i73_KncXyA1#) (password: 7dif)
 - **SIP**: [Google Drive](https://drive.google.com/file/d/1ebNjyrS28vEXDGawxHxVFNNxz3XLBqrT/view?usp=drive_link)
 
 ### Register Datasets
@@ -103,7 +103,7 @@ _root = os.getenv("DETECTRON2_DATASETS", "path/to/dataset/root")
 ```
 
 ## Pre-trained Models
-Model weights: [Google Drive](https://drive.google.com/drive/folders/19n_Sb6Y4C9uzsqyX6OhkzN6XAjI1iOLI?usp=drive_link); [迅雷云盘](https://pan.xunlei.com/s/VO-ZHW99Jup3U6-i73_KncXyA1#) (password: 7dif)
+Model weights: [Google Drive](https://drive.google.com/drive/folders/19n_Sb6Y4C9uzsqyX6OhkzN6XAjI1iOLI?usp=drive_link)
 
 | Model     | Config                                                    | COME15K-E-test AP  | COME15K-H-test AP  | 
 | :-------- | :---------------------------------------------------------| :----------------- | :----------------- | 
