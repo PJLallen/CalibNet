@@ -103,7 +103,7 @@ _root = os.getenv("DETECTRON2_DATASETS", "path/to/dataset/root")
 ```
 
 ## Pre-trained Models
-Model weights: [Google Drive](https://drive.google.com/drive/folders/19n_Sb6Y4C9uzsqyX6OhkzN6XAjI1iOLI?usp=drive_link)
+Model weights: [Google Drive](https://drive.google.com/drive/folders/19n_Sb6Y4C9uzsqyX6OhkzN6XAjI1iOLI?usp=drive_link); [迅雷云盘](https://pan.xunlei.com/s/VO-ZHW99Jup3U6-i73_KncXyA1#) (password: 7dif)
 
 | Model     | Config                                                    | COME15K-E-test AP  | COME15K-H-test AP  | 
 | :-------- | :---------------------------------------------------------| :----------------- | :----------------- | 
