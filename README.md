@@ -5,11 +5,11 @@ Official Implementation of "[CalibNet: Dual-branch Cross-modal Calibration for R
 
 [Jialun Pei](https://scholar.google.com/citations?user=1lPivLsAAAAJ&hl=en), [Tao Jiang](https://github.com/Jtao0818), [He Tang](https://scholar.google.com/citations?hl=en&user=70XLFUsAAAAJ), [Nian Liu](https://scholar.google.com/citations?user=ZSilWs4AAAAJ&hl=zh-CN), [Yueming Jin](https://yuemingjin.github.io/), [Deng-Ping Fan](https://dengpingfan.github.io/), and [Pheng-Ann Heng](https://scholar.google.com/citations?user=OFdytjoAAAAJ&hl=zh-CN)
 
-[[Paper]](https://arxiv.org/abs/2207.02255); [[Chinese Version]](https://github.com/PJLallen/CalibNet/blob/main/assets/CalibNet_Chinese.pdf); [Official Version]
+👀 [[Paper]](https://arxiv.org/pdf/2307.08098); [[Chinese Version]](https://github.com/PJLallen/CalibNet/blob/main/assets/CalibNet_Chinese.pdf); [Official Version]
 
 **Contact:** dengpfan@gmail.com, peijialun@gmail.com
 
-## Environment Preparation
+## 🔧 Environment Preparation
 
 ### Requirements
 - Linux with python ≥ 3.8
@@ -54,7 +54,7 @@ sh make.sh
 cp -i calibnet/c2_model_loading.py detectron2/checkpoint/c2_model_loading.py
 ```                                      
 
-## Dataset Preparation
+## 📈 Dataset Preparation
 
 ### Download and Unzip Datasets and Annotation Files
 
@@ -102,7 +102,7 @@ cp -i calibnet/c2_model_loading.py detectron2/checkpoint/c2_model_loading.py
 _root = os.getenv("DETECTRON2_DATASETS", "path/to/dataset/root")
 ```
 
-## Pre-trained Models
+## 🚀 Pre-trained Models
 Model weights: [Google Drive](https://drive.google.com/drive/folders/19n_Sb6Y4C9uzsqyX6OhkzN6XAjI1iOLI?usp=drive_link)
 
 | Model     | Config                                                    | COME15K-E-test AP  | COME15K-H-test AP  | 
@@ -113,7 +113,7 @@ Model weights: [Google Drive](https://drive.google.com/drive/folders/19n_Sb6Y4C9
 | PVT-v2    | [config](configs/CalibNet_PVT_50e_50q_320size.yaml)       | 60.7               | 53.7               | 
 | P2T-Large | [config](configs/CalibNet_P2T_large_50e_50q_320size.yaml) | **61.8**               | **54.4**               |
 
-## Usage
+## ⚙️ Usage
 
 ### Train
 To train our CalibNet on single GPU, you should specify the config file `<CONFIG>`.
@@ -151,11 +151,11 @@ python tools/get_flops.py --tasks flop --config-file <CONFIG> MODEL.WEIGHTS <WEI
 
 This work is based on [detectron2](https://github.com/facebookresearch/detectron2) and [SparseInst](https://github.com/hustvl/SparseInst). We sincerely thanks for their great work and contributions to the community!
 
-## Citation
+## 📚 Citation
 
 If this helps you, please cite this work:
 
-```
+```bibtex
 @article{pei2024calibnet,
   title={CalibNet: Dual-branch Cross-modal Calibration for RGB-D Salient Instance Segmentation},
   author={Pei, Jialun and Jiang, Tao and Tang, He and Liu, Nian and Jin, Yueming and Fan, Deng-Ping and Heng, Pheng-Ann},
