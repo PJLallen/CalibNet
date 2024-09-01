@@ -1,11 +1,11 @@
-# CalibNet: Dual-branch Cross-modal Calibration for RGB-D Salient Instance Segmentation [TIP2024]
+# [TIP2024] CalibNet: Dual-branch Cross-modal Calibration for RGB-D Salient Instance Segmentation 
 ![CalibNet](assets/pipeline.png)
 
 Official Implementation of "[CalibNet: Dual-branch Cross-modal Calibration for RGB-D Salient Instance Segmentation](https://arxiv.org/pdf/2307.08098)"
 
 [Jialun Pei](https://scholar.google.com/citations?user=1lPivLsAAAAJ&hl=en), [Tao Jiang](https://github.com/Jtao0818), [He Tang](https://scholar.google.com/citations?hl=en&user=70XLFUsAAAAJ), [Nian Liu](https://scholar.google.com/citations?user=ZSilWs4AAAAJ&hl=zh-CN), [Yueming Jin](https://yuemingjin.github.io/), [Deng-Ping Fan](https://dengpingfan.github.io/)✉, and [Pheng-Ann Heng](https://scholar.google.com/citations?user=OFdytjoAAAAJ&hl=zh-CN)
 
-👀 [[Paper]](https://arxiv.org/pdf/2307.08098); [[Chinese Version]](https://github.com/PJLallen/CalibNet/blob/main/assets/CalibNet_Chinese.pdf); [Official Version]
+👀 [[Paper]](https://arxiv.org/pdf/2307.08098); [[Chinese Version]](https://github.com/PJLallen/CalibNet/blob/main/assets/CalibNet_Chinese.pdf); [Official Version](https://ieeexplore.ieee.org/abstract/document/10614124)
 
 **Contact:** dengpfan@gmail.com, peijialun@gmail.com
 
