@@ -160,6 +160,8 @@ If this helps you, please cite this work:
   title={CalibNet: Dual-branch Cross-modal Calibration for RGB-D Salient Instance Segmentation},
   author={Pei, Jialun and Jiang, Tao and Tang, He and Liu, Nian and Jin, Yueming and Fan, Deng-Ping and Heng, Pheng-Ann},
   booktitle={IEEE Transactions on Image Processing},
+  volume={33},
+  pages={4348-4362},
   year={2024},
   organization={IEEE}
 }
